@@ -3,5 +3,5 @@ navbar:
   title: "DMD"
   left:
     - text: "Summary plots"
-      href: index.html
+      href: DMD.html
 output_dir: "docs"
