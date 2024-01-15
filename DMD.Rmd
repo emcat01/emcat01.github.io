@@ -1,0 +1,63 @@
+---
+title: ''
+author: ''
+date: ''
+output:
+  html_document: null
+  toc: yes
+  toc_float: yes
+  collapsed: no
+  number_sections: no
+  toc_depth: 3
+  smooth_scroll: no
+  theme: cerulean
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(reshape2)
+library(tidyverse)
+library(reactable)
+library(data.table)
+```
+# DMD 
+
+## RMAT Barplots {.tabset}
+
+### BYD vs BWD {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/BYD_vs_BWD", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
+
+### BYT vs BWT {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/BYT_vs_BWT", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
+
+### MWD vs BWD {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/MWD_vs_BWD", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
+
+### MWT vs BWT {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/MWT_vs_BWT", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
+
+### MYD vs BYD {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/MYD_vs_BYD", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
+
+### MYT vs BYT {.tabset}
+```{r,echo = FALSE,fig.show = "hold", out.width = "100%", fig.align = "default"}
+imageList <- list.files("/Users/ecarlson/Desktop/DSE-Bargraphs/MYT_vs_BYT", pattern= "*.png", full.names=T)
+include_graphics(imageList,dpi = 600)
+```
